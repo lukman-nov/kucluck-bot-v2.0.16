@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--meta tags-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/headfoot.css">
+        <link rel="stylesheet" href="../css/docs.css">
+        <title>Documentation | Kucluck Pro</title>
+        <link rel="shortcut icon" href="/img/Gaming-podcast-Logo-only.png">
+        <script src="https://kit.fontawesome.com/9746709e58.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
+        <link rel="stylesheet" type="text/css"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <!--HEADER-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a href="../index.html" class="navbar-logo"><img src="../img/logo_kucluck.svg" alt="Logo" width="100px"
+                    class="d-inline-block aligh-center"> Kucluck</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./commands.html" title="Commands" style="color: #fff;"><i
+                                class="fab fa-rocketchat"></i> Commands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Documentation" style="color: #fff;"><i
+                                class="far fa-file-alt"></i> Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://kucluck.com/support" target="_blank" rel="nofollow"
+                            title="Discord Server" style="color: #fff;"><i class="fab fa-discord"></i> Discord
+                            Server</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./premium.html" title="Upgrade" style="color: #fff;"><i class="fas fa-gem"></i>
+                            Upgrade</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <!--HEAD DOCS-->
+    <div class="d-flex justify-content-center command_head">
+        <h1>Docs Kucluck Bot</h1>
+    </div>
+    <!--MENU DOCS-->
+    <!--
+    <div class="container px-lg-5" id="command_head">
+        <div class="row">
+            <div class="col-sm-3" id="category">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-quickstart-list" data-bs-toggle="list" href="#list-quickstart" role="tab" aria-controls="list-quickstart"><i class="fas fa-stopwatch"></i> Quickstart</a>
+                    <a class="list-group-item list-group-item-action" id="list-command-list" data-bs-toggle="list" href="#list-faq" role="tab" aria-controls="list-faq"><i class="far fa-question-circle"></i> FAQ</a>
+                    <a class="list-group-item list-group-item-action" id="list-donate-list" data-bs-toggle="list" href="#list-donate" role="tab" aria-controls="list-donate"><i class="fas fa-donate"></i> Donate</a>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="list-quickstart" role="tabpanel" aria-labelledby="list-quickstart-list">
+                        <div class="box-quickstart">
+                            <h3>Quickstart</h3>
+                            <p>Kucluck Bot adalah bot Discord serba guna yang gratis
+                                dan berkualitas untuk server Discord kalian. Kucluck bot sangat mudah di invite ke
+                                server Discord kalian tanpa konfigurasi yang rumit.</p>
+                        </div>
+                        <div class="box-quickstart">
+                            <h3>Invite Bot</h3>
+                            <p>Menggunakan Kucluck Bot di server kalian sangat mudah. Pertama, silahkan periksa apakah Kamu memiliki izin Administrator atau Kelola Server.
+                                <br>
+                                Untuk pemilik server memiliki semua izin bahkan tanpa peran.</p>
+                            <p>Jika kalian sudah dipastikan memiliki peran dalam mengelolah server, sekarang Kamu bisa invite Kucluck Bot dengan menggunakan <a href="https://kucluck.com/addbot" target="_blank" rel="unfollow" style="text-decoration: none;">link ini</a></p>
+                            <p><img class="invite-img" src="https://cdn.discordapp.com/attachments/898516000604061699/907576990066954240/unknown.png"></p>
+                        </div>
+                        <div class="box-quickstart">
+                            <h3>Menggunakan Bot</h3>
+                            <p>Sekarang Kamu sudah bisa menggunakan Kucluck Bot di server Discord Kamu. Kamu bisa lihat commands untuk Kucluck Bot <a href="./commands.html" style="text-decoration: none;">disini</a>, atau kamu bisa mengirimkan pesan <code>!help [command] </code>yang nantinya Kucluck Bot akan mengirimkan DM ke kamu tentang semua commands Kucluck Bot.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-faq" role="tabpanel" aria-labelledby="list-faq-list">
+                        <div class="box-faq">
+                            <div class="col-md-3 search-box">
+                                <input type="text" id="myInputFaq" onkeyup="myFunction()" placeholder="Search for commands..">
+                                <script src="../script/cari-faq.js"></script>
+                                <ul class="text-box" id="myULFaq">
+                                    <li class="box-li"><a class="text-box-head" href="#list-faq">Frequently Asked Questions (FAQ)</a><p>Jika Kamu memliki pertanyaan penting seputar bot, Kamu bisa lihat di halaman ini. Dan jika kamu memiliki pertanyaan lain kamu bisa langsung hubungi kami di <a href="https://kucluck.com/support" target="_blank" rel="unfollow" style="text-decoration: none;">Discord Channel</a> kami.</p>
+                                    </li>
+                                    <li class="box-li"><a class="text-box-head" href="#list-faq">Kucluck Bot Tidak Merespon Commands</a>
+                                        <p>Pertama silahkan kamu cek terlebih dahulu, apakah Kucluck Bot diberikan Izin untuk melihat dan mengirimkan pesan di text channel yang kamu gunakan untuk memberikan command.<br>
+                                        Jika sudah silahkan dan masih tidak merespon silahkan kamu cek <code>!config</code>, apakah prefix yang kamu sudah gunakan benar atau tidak.</p>
+                                    </li>
+                                    <li class="box-li"><a class="text-box-head" href="#list-faq">Dimana dan Bagaimana saya bisa mendapatkan Kucluck Pro</a>
+                                        <p>Untuk Kucluck Pro, kamu bisa memilikinya dengan membayar sebesar IDR 25k/bulan atau $3/bulan. Dan kamu dan semua member yang ada di Server Discord kamu bisa menggunakan semua fitur Kucluck Pro selama 1 bulan.<br><br> Kamu bisa cek <a href="./premium.html" target="_blank" rel="unfollow" style="text-decoration: none;">disini</a> untuk mendapatkan informasi lebih detail tentang Kucluck Pro.</p>
+                                    </li>
+                                    <li class="box-li"><a class="text-box-head" href="#list-faq">Saya Sudah Membeli Kucluck Pro Tapi Tidak Berfungsi</a>
+                                        <p>Untuk kasus ini, kamu bisa langsung hubungi Admin kami yang berada di <a href="https://kucluck.com/support" target="_blank" rel="unfollow" style="text-decoration: none;">Discord Channel</a> kami, Atau kamu bisa langsung mengirimkan Email ke <a href="mailto:admin@kucluck.com" target="_blank" rel="unfollow" style="text-decoration: none;">admin@kucluck.com</a>.</p>
+                                    </li>
+                                    <li class="box-li"><a class="text-box-head" href="#list-faq">Kucluck Bot Tidak Bersuara</a>
+                                        <p>Petama, kamu harus pastikan kalau Kucluck Bot diberikan izin untuk bersuara di voice channel kamu.<br>Jika Kucluck Bot tidak bersuara, kamu bisa coba mengganti region voice channel kamu terlebih dahulu.<br>Jika cara di atas tidak berhasil, silahkan kamu coba untuk mengeluarkan Kucluck Bot dari voice channel <code>!leave</code> lalu kamu ulangi command memainkan musik <code>!play [judul lagu]</code>.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-donate" role="tabpanel" aria-labelledby="list-donate-list">
+                        <h2>Yuk Support Kucluck Bot</h2>
+<p>Kami sangat senang menemani kalian mendengarkan musik di server Discord kalian sambil
+    bermain game atau sambil ngobrol dengan teman-teman kalian. Tapi sebelumnya kami meminta
+    maaf kalau kami masih banyak kekurangan, tapi dengan adanya dukungan kalian kami akan
+    terus berkembang dari waktu ke waktu.</p>
+<p>Perkembangan akan terus kami lakukan, maka dari itu dengan adanya halaman ini, kami
+    berharap kalian bisa ikut turut serta membantu kami dalam mengembangkan Kucluck Bot
+    kami.</p>
+<p>Kami akan berterimakasih banyak untuk kalian yang ikut turut serta membantu pengembangan
+    Kucluck Bot ini. dan kami akan memberikan fitur <strong>PREMIUM</strong> yang kalian
+    bisa gunakan di channel Discord kalian loh...</p>
+<br>
+<h2>Fitur Premium:</h2>
+<li>Shuffle Playlist</li>
+<li>24/7 Join Voice Channel</li>
+<li>Kick/Ban Member</li>
+<small>
+    <p>*Jika kalian ada request untuk menambahkan fitur premium bisa PM discord Lukman
+        Novawiyadi</p>
+</small>
+<p>Bagi kalian yang ingin menggunakan fitur ini kalian cukup donate sebesar <b>IDR
+        20.000</b> saja loh, dan kalian bisa menikmati fitur ini sepuasnya.</p>
+<center><a href="https://saweria.co/kucluck" class="btn-donate" target="_blank" rel="nofollow" title="Donate">Donate</a>
+</center>
+<br>
+<p>Jika kalian sudah donate kalian cukup join ke channel Discord kami dan kirimkan bukti pembayaran kalian ke<br>
+    <center><img src="https://pro.kucluck.com/img/lukman%20novawiyadi%20img.png"></center>
+</p>
+<br>
+<h2>Join to Kucluck Lounge</h2>
+<p>Kami mengundang kalian semua ke Discord Server kami, untuk diskusi, saran, dan
+    informasi.
+    <center><a href="https://kucluck.com/joinserver" class="btn-donate" target="_blank" rel="nofollow" title="Join">Join</a>
+    </center>
+    <br>
+</p>
+<br>
+<h2>Credits</h2>
+<p>Dengan ketekunan dan keyakinan yang matang, Kucluck Pro dikembangkan sendiri oleh Lukman Novawiyadi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    -->
+    <section>
+        <!--QuickStart-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/quickstart.html#quickstart" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Quickstart</h4>
+                            <p class="text">Kucluck Bot adalah bot Discord serba guna yang gratis dan berkualitas untuk
+                                server Discord kalian. Kucluck bot sangat mudah di invite ke server Discord kalian tanpa
+                                konfigurasi yang rumit...</p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>quickstart</p>
+                                <p>invite bot</p>
+                                <p>usebot</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#faq" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Frequently Asked Questions (FAQ)</h4>
+                            <p class="text">Jika Kamu memliki pertanyaan penting seputar bot, Kamu bisa lihat di halaman
+                                ini. Dan jika kamu memiliki pertanyaan lain kamu bisa langsung hubungi kami di...
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>faq</p>
+                                <p>bot</p>
+                                <p>problem</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#proadd" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Dimana dan Bagaimana saya bisa mendapatkan Kucluck Pro</h4>
+                            <p class="text">Untuk Kucluck Pro, kamu bisa memilikinya dengan membayar sebesar IDR
+                                25k/bulan atau $3/bulan. Dan kamu dan semua...</p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>premium</p>
+                                <p>payment</p>
+                                <p>get</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--FAQ-->
+            <div class="row">
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#faq" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Frequently Asked Questions (FAQ)</h4>
+                            <p class="text">Jika Kamu memliki pertanyaan penting seputar bot, Kamu bisa lihat di halaman
+                                ini. Dan jika kamu memiliki pertanyaan lain kamu bisa langsung hubungi kami di...
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>basic</p>
+                                <p>faq</p>
+                                <p>introduction</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#norespond" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Kucluck Bot Tidak Merespon Commands</h4>
+                            <p class="text">Pertama silahkan kamu cek terlebih dahulu, apakah Kucluck Bot diberikan Izin
+                                untuk melihat dan mengirimkan pesan di text channel yang kamu...
+                            </p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>basic</p>
+                                <p>faq</p>
+                                <p>chat</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#norespond" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Kucluck Bot Tidak Merespon Commands</h4>
+                            <p class="text">Pertama silahkan kamu cek terlebih dahulu, apakah Kucluck Bot diberikan Izin
+                                untuk melihat dan mengirimkan pesan di text channel yang kamu...
+                            </p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>basic</p>
+                                <p>faq</p>
+                                <p>chat</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#proadd" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Dimana dan Bagaimana saya bisa mendapatkan Kucluck Pro</h4>
+                            <p class="text">Untuk Kucluck Pro, kamu bisa memilikinya dengan membayar sebesar IDR
+                                25k/bulan atau $3/bulan. Dan kamu dan semua member yang ada di Server Discord ...</p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>basic</p>
+                                <p>faq</p>
+                                <p>premium</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-3 box-docs">
+                    <a href="./docs/faq.html#proadd" class="card-title"
+                        style="text-decoration: none; color: #fff;">
+                        <div class="box-quickstart">
+                            <img src="../img/Logo pro small.png" class="logo-box" width="50px">
+                            <div class="box-name">
+                                <p>Kucluck
+                                <div class=bot-text>
+                                    <p>BOT</p>
+                                </div>
+                                </p>
+                                <p class="date">13/11/2021</p>
+                            </div>
+                        </div>
+                        <div class="chat-box">
+                            <h4>Saya Sudah Membeli Kucluck Pro Tapi Tidak Berfungsi</h4>
+                            <p class="text">Untuk kasus ini, kamu bisa langsung hubungi Admin kami yang berada di <a
+                                    href="https://kucluck.com/support" target="_blank" rel="unfollow"
+                                    style="text-decoration: none;">Discord Channel</a> kami atau kamu bisa langsung
+                                mengirimkan Email ke <a href="mailto:admin@kucluck.com" target="_blank" rel="unfollow" style="text-decoration: none;">admin@kucluck.com</a>.</p>
+                            <p class="readmore">Baca lebih lanjut...</p>
+                            <div class="box-category">
+                                <p>basic</p>
+                                <p>faq</p>
+                                <p>premium</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container-fot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Kucluck Bot</h4>
+                    <ul>
+                        <li><a href="./docs.html" title="Quickstart">Quickstart</a></li>
+                        <li><a href="./commands.html" title="Commands">Commands</a></li>
+                        <li><a href="./premium.html" title="Premium">Premium</a></li>
+                    </ul>
+                </div>  
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://kucluck.com/addbot" target="_blank" rel="nofollow" title="Add to Server">Add to server</a></li>
+                        <li><a href="https://kucluck.com/support" target="_blank" rel="nofollow" title="Discord Channel">Discord channel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="./disclaimer.html" title="Disclaimer">Disclaimer</a></li>
+                        <li><a href="./tos.html" title="Terms of Service">Terms of Service</a></li>
+                        <li><a href="./policy.html" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-right">
+                    <h4>Kucluck Bot</h4>
+                    <p>Bot Discord serba guna yang gratis dan berkualitas untuk server Discord kalian.</p>  
+                    <a href="mailto:admin@kucluck.com" class="mailto" target="_blank" rel="nofollow"><i class="fas fa-envelope-open-text"></i> admin@kucluck.com</a>
+                    <p class="foot-copyright"><i class="far fa-copyright"></i> Kucluck Bot 2021 - All rights reserved.<br><i class="fas fa-edit"></i> Web Designed by <a href="https://web.facebook.com/lukman.now" target="_blank" rel="nofollow" style="color: #c5c5c5">Lukman Novawiyadi</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

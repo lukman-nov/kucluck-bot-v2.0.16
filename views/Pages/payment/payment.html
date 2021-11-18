@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Checkout Kucluck Pro</title>
+  <script src="https://kit.fontawesome.com/9746709e58.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/payment.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <form action="./payment.php" target="_blank">
+    <div class="payment">
+      <div class="payment-logo">
+        <img src="../../img/Logo pro small.png" width="100px">
+      </div>
+      <h2>Pembelian Kucluck Pro</h2>
+      <div class="form">
+        <div class="card space icon-relative">
+          <label class="label">Nama:</label>
+          <input type="text" class="input" placeholder="Nama Kamu">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Username Discord:</label>
+          <div class="card-username">
+            <input type="text" class="input-username" placeholder="Username">
+            <input type="number" class="input-tag" placeholder="#0000" data-mask="0000">
+          </div>
+          <i class="fab fa-discord"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Email:</label>
+          <input type="text" class="input" placeholder="kucluck@example.com">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Saya setuju bahwa pembayaran yang sudah masuk tidak bisa dikembalikan, kecuali dengan <a href="./tos.html"
+            target="popup" onclick="window.open('./tos.html','popup','width=600,height=650'); return false;">syarat
+            sebagai berikut</a>
+        </label>
+          <input type="submit" value="Langsung Bayar" class="btn">
+      </div>
+    </div>
+  </form>
+  </div>
+
+
+</body>
+
+</html>
