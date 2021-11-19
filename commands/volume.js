@@ -1,21 +1,17 @@
 const { MessageEmbed } = require("discord.js");
 const { TrackUtils } = require("erela.js");
-const levels = {
-  none: 0.0,
-  low: 0.2,
-  medium: 0.3,
-  high: 0.35,
-};
+const premiums = ("", "");
+
 module.exports = {
-  name: "bassboost",
+  name: "volume",
   category: "music",
-  description: "Enables bass boosting audio effect",
-  usage: "<none|low|medium|high>",
+  description: "Check or change the current volume",
+  usage: "<volume>",
   permissions: {
     channel: ["VIEW_CHANNEL", "SEND_MESSAGES", "EMBED_LINKS"],
     member: [],
   },
-  aliases: ["bb", "bass"],
+  aliases: ["vol", "v"],
   /**
    *
    * @param {import("../structures/KucluckBot")} client
@@ -30,11 +26,20 @@ module.exports = {
         message.channel,
         "❌ | **Nothing is playing right now...**"
       );
+    if (!args[0])
+      return client.sendTime(
+        message.channel,
+        `🔉 | Current volume \`${player.volume}\`.`
+      );
     if (!message.member.voice.channel)
       return client.sendTime(
         message.channel,
         "❌ | **You must be in a voice channel to use this command!**"
       );
+
+      let premium = premiums.includes(message.guild.id)
+      if(!premium) return message.channel.send("You need to upgrade to premium to use this command!")
+      
     if (
       message.guild.me.voice.channel &&
       message.member.voice.channel.id !== message.guild.me.voice.channel.id
@@ -43,26 +48,23 @@ module.exports = {
         message.channel,
         ":x: | **You must be in the same voice channel as me to use this command!**"
       );
-
-    if (!args[0])
+    if (!parseInt(args[0]))
       return client.sendTime(
         message.channel,
-        "**Please provide a bassboost level. \nAvailable Levels:** `none`, `low`, `medium`, `high`"
-      ); //if the user do not provide args [arguments]
-
-    let level = "none";
-    if (args.length && args[0].toLowerCase() in levels)
-      level = args[0].toLowerCase();
-
-    player.setEQ(
-      ...new Array(3)
-        .fill(null)
-        .map((_, i) => ({ band: i, gain: levels[level] }))
-    );
-
-    return client.sendTime(
-      message.channel,
-      `✅ | **Bassboost level set to** \`${level}\``
-    );
+        `**Please choose a number between** \`1 - 100\``
+      );
+    let vol = parseInt(args[0]);
+    if (vol < 0 || vol > 100) {
+      return client.sendTime(
+        message.channel,
+        "❌ | **Please Choose A Number Between `1-100`**"
+      );
+    } else {
+      player.setVolume(vol);
+      client.sendTime(
+        message.channel,
+        `🔉 | **Volume set to** \`${player.volume}\``
+      );
+    }
   },
 };

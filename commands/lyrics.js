@@ -2,6 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const { TrackUtils } = require("erela.js");
 const lyricsFinder = require("lyrics-finder");
 const _ = require("lodash");
+const premiums = ("", "");
 
 module.exports = {
   name: "lyrics",
@@ -21,6 +22,9 @@ module.exports = {
    * @param {*} param3
    */
   run: async (client, message, args, { GuildDB }) => {
+    let premium = premiums.includes(message.guild.id)
+    if(!premium) return message.channel.send("You need to upgrade to premium to use this command!")
+    
     let player = await client.Manager.get(message.guild.id);
     let SongTitle = args.join(" ");
     let SearchString = args.join(" ");

@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { TrackUtils } = require("erela.js");
+const premiums = ("", "");
 
 module.exports = {
   name: "bump",
@@ -27,6 +28,9 @@ module.exports = {
       );
     if (!args[0])
       return client.sendTime(message.channel, "❌ | **Invalid arguments.**");
+
+      let premium = premiums.includes(message.guild.id)
+      if(!premium) return message.channel.send("You need to upgrade to premium to use this command!")
 
     // Check if (args[0] - 1) is a valid index
     let trackNum = parseInt(args[0] - 1);

@@ -30,8 +30,7 @@ class KucluckBot extends Client {
       //Saved at jsoning node_modules directory, DOCS: https://jsoning.js.org/
       guild: new Jsoning("guild.json"), //Server Config
     };
-    this.logger = new Logger(path.join(__dirname, "..", "Logs.log"));
-
+    this.logger = new Logger(path.join(__dirname, "..", "Logs.log")); 
     try {
       //Config for testing
       this.botconfig = require("../dev-config");

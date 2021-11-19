@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { TrackUtils, Player } = require("erela.js");
+const premiums = ("", "");
 
 module.exports = {
   name: "skipto",
@@ -44,6 +45,9 @@ module.exports = {
         message.channel,
         ":x: | **You must be in the same voice channel as me to use this command!**"
       );
+
+      let premium = premiums.includes(message.guild.id)
+      if(!premium) return message.channel.send("You need to upgrade to premium to use this command!")
 
     try {
       if (!args[0])
