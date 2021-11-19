@@ -30,7 +30,7 @@ module.exports = {
       .addField('🎵 **Music**','`!clear`, `!connect`, `!disconnect`, `!loop`, `!move`, `!nowplaying`, `!pause`, `!play`, `!queue`, `!remove`, `!resume`, `!search`, `!seek`, `!shuffle`, `!skip`')
       .addField('🛠️ **Admin**', '`!config`, `!clearchat`')
       .addField('👻 **Fun**', '`!youtube`, `!ava`, `!meme`')
-      .addField('⁉️ **Other**', '`!invite`, `!ping`')
+      .addField('⁉️ **Other**', '`!invite`, `!ping`, `!report`')
       .setTimestamp()
       .setFooter(`${client.botconfig.BotName} v${require("../package.json").version}`);
 

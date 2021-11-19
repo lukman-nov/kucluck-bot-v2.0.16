@@ -3,12 +3,12 @@ module.exports = {
   BotLogo: "http://kucluck.com/img/Logo.png",
   Admins: ["377636455016824834"], //Admins of the bot
   ExpressServer: true, //If you wanted to make the website run or not
-  DefaultPrefix: process.env.Prefix || "1!", //Default prefix, Server Admins can change the prefix
+  DefaultPrefix: process.env.Prefix || ">", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/BuACxn4XUw", //Support Server Link
-  Token: process.env.Token || "", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "", //Discord Client Secret
+  Token: process.env.Token || "OTAyMTM4NTA5NTg5MDkwMzE0.YXaD9Q.O1U-ai0AfUhYklGfBnLLE5r4Ir0", //Discord Bot Token
+  ClientID: process.env.Discord_ClientID || "902138509589090314", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "-b8997csVB_D2PfFXtQ4h62Ng67fB2tU", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   ServerDeafen: true, //If you want bot to stay deafened
   DefaultVolume: 100, //Sets the default volume of the bot, You can change this number anywhere from 1 to 100

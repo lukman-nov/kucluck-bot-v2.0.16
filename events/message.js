@@ -8,15 +8,6 @@ const { MessageEmbed } = require("discord.js");
  */
 
 module.exports = async (client, message) => {
-  if (message.mentions.has(client.user.id)) {
-    let embed = new MessageEmbed()
-      .setAuthor(client.user.username, client.user.displayAvatarURL(), client.botconfig.Website)
-      .setColor(client.botconfig.EmbedColor)
-      .setDescription(`Thank you for using ${client.botconfig.BotName}. \nYou can invite me by clicking [**here**](${client.botconfig.Addbot}). \n \n Use \`${client.botconfig.DefaultPrefix}help\` to get help! \n Love you~ :heart: \n`)
-      .setFooter(`${client.botconfig.BotName} v${require("../package.json").version}`);
-    return message.lineReply(embed)
-  }
-
   if (message.author.bot || message.channel.type === "dm") return;
   let prefix = client.botconfig.DefaultPrefix;
 

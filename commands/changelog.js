@@ -24,7 +24,7 @@ module.exports = {
             .setAuthor(`${client.botconfig.BotName} v${require("../package.json").version}`, client.botconfig.BotLogo, client.botconfig.Website)
             .setTitle('**Change Log:**')
             .setColor(client.botconfig.EmbedColor)
-            .setDescription(`- Disable premium commands in the bot. \n \nAdd new features: \n- **Report** Report bugs in the bot. \`${GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix}report\` \n \nSay \`${GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix}help\` For more information a new commands.`)
+            .setDescription(`- Disable premium commands in the bot. \n- Disable mention bot. \n \nAdd new features: \n- **Report** Report bugs in the bot. \`${GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix}report\` \n \nSay \`${GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix}help\` For more information a new commands.`)
             .setTimestamp()
             .setFooter(`${client.botconfig.BotName} v${require("../package.json").version}`);
         message.channel.send(Embed)
