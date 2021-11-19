@@ -7,8 +7,8 @@ module.exports = {
   Port: 3000, //Which port website gonna be hosted
   SupportServer: "https://discord.gg/BuACxn4XUw", //Support Server Link
   Token: process.env.Token || "", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "902138509589090314", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "-b8997csVB_D2PfFXtQ4h62Ng67fB2tU", //Discord Client Secret
+  ClientID: process.env.Discord_ClientID || "", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   ServerDeafen: true, //If you want bot to stay deafened
   DefaultVolume: 100, //Sets the default volume of the bot, You can change this number anywhere from 1 to 100
@@ -26,9 +26,9 @@ module.exports = {
   PremiumGuilds: "",
   
   Presence: {
-    status: "idle", // You can show online, idle, and dnd
-    name: "Test Server | !help", // kucluck.com || !!help The message shown
-    type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
+    status: "online", // You can show online, idle, and dnd
+    name: "kucluck.com | !help", // kucluck.com || !!help The message shown
+    type: "PLAYING", // PLAYING, WATCHING, LISTENING, STREAMING
   },
 
   //Lavalink
